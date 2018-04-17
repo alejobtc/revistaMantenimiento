@@ -63,6 +63,10 @@ $("#consultarPorFecha").button().on("click", function(event)
 
 })
 
+$("#RegresarVindex").button().on("click", function(){
+	window.location = "../Vistas/Vindex.html";
+})
+
 
 $("#consultarPorPublicacion").button().on("click", function(event)
 {
@@ -73,6 +77,8 @@ $("#consultarPorPublicacion").button().on("click", function(event)
 		alert("Ingresar código de publicación");
 
 	}else{
+
+		alert(respuesta);
 
 		var obj=document.getElementById('Contenido1');
 		obj.innerHTML="<tr class=\"success letras\"><td>TITULO</td><td>RESUMEN</td><td>TEMA</td></tr></table></div>";
@@ -1080,7 +1086,7 @@ $("#Listarrevisiop").button().on("click", function(event)
 	{
 		
 	
-
+		alert(respuesta);
 	  var datos= jQuery.parseJSON(respuesta); 	
 	 
 	  

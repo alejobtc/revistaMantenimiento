@@ -85,7 +85,7 @@ public function modificarart($articulo)
 	if($articulo->gettituloar()!="")
 		$this->Sql="Select * from articulo where tituloar='".$articulo->gettituloar()."';";
 		$Registros=pg_exec($this->Conexion,$this->Sql);	
-	return($Registros);	
+		return($Registros);	
 }
 
 public function consultarPublicacion($Dato){

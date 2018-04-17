@@ -54,7 +54,17 @@ class controladora
 	}
 	
 	
-	/////// consulta por estado de  el autor especifico
+	/**
+	 *
+	 *	Este método selecciona los articulos 
+	 *	pendientes de recibir modificaciones
+	 *	pertenecientes al autor que tiene su 
+	 *	sesión activa. 
+	 * 
+	 * @param  $Dato es un arreglo que contiene la 
+	 * 			información de la sesión actual
+	 * @return Se retorna un archivo json de artículos
+	 */
 	public function consultarestado($Dato)
 	{   
 	   	   
