@@ -1,0 +1,90 @@
+<! doctype html>
+<html>
+<head>
+<script src="../Includes/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="../Includes/jquery-ui-1.10.4/js/jquery-ui-1.10.4.custom.js"></script>
+<script src="../Js/Javascripts.js"></script>
+<link href="../includes/boostrap3/css/bootstrap.css" type="text/css" rel="stylesheet">
+<link href="../Css/estilo.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<title>Consulta</title>
+</head>
+<body class="fondo">
+<div class="principal">
+
+<header>
+	<div class="header" >
+    	<div><br></div>
+		<div class="col-xs-6  text-center"></div>
+		<div class="col-xs-2" style="color:#FFF">Usuario</div>
+		<div class="col-xs-4" style="color:#FFF">Contraseña</div>
+		<div class="col-xs-5 text-center" ></div>
+		<div class="col-xs-1 text-center"style="color:#FFF">Login</div>
+		<div class="col-xs-2"><input type="text" name="usuarioPP" id="usuarioPP" ></div>
+		<div class="col-xs-2"><input type="text" name="clavePP" id="clavePP"></div>
+		<div class="col-xs-2 text-center"><button name="Login" id="Login" class="btn btn-default">Ingresar</button></div>
+	</div>
+    
+	
+</header>
+
+
+<section>
+
+	<br>
+
+	<div class="row">
+		<div class="col-xs-offset-1 col-xs-10"><h2>Consultar por codigo de publicación</h2></div>
+	</div>
+	
+	<div class="row">
+		<div class="col-xs-offset-1 col-xs-2"><input type="text" placeholder="Código publicación" name="CodPublicacion" id="CodPublicacion"></div>
+		<div class="col-xs.offset-1 col-xs-7"><button name="consultarPorPublicacion" id="consultarPorPublicacion" class="btn-primary">Consultar</button></div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-offset-1 col-xs-10"><h2>Consultar por rango de fecha</h2></div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-offset-1 col-xs-1">Inicio:</div>
+		<div class="col-xs-1">
+			<input class="text" placeholder="aaaa-mm-dd" id="fechaInicio"></input>
+		</div>
+		<div class="col-xs-offset-1 col-xs-1">Fin:</div>
+		<div class="col-xs-1">
+			<input class="text" placeholder="aaaa-mm-dd" id="fechaFin"></input>
+		</div>
+		<div class="col-xs-offset-1 col-xs-1">
+			<button class="btn-primary" id="consultarPorFecha">Consultar</button>
+		</div>
+	</div>
+
+	
+
+
+<br>
+<div class="col-xs-offset-1 col-xs-6">
+<table id="Contenido1" class="table table-bordered">
+<tr class="success letras">
+<td>TITULO</td>
+<td>RESUMEN</td>
+<td>TEMA</td>
+</tr>
+</table>
+</div>
+
+</section>
+
+
+		
+</nav>
+</div>
+
+<div class="footer">
+	<div class="col-xs-12>< text-center fondodiv">FOOTER</footer></div>
+</div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<script src="../Includes/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="../Includes/jquery-ui-1.10.4/js/jquery-ui-1.10.4.custom.js"></script>
+<script src="../Js/Javascripts.js" type="application/javascript"></script>
+
+<link href="../includes/boostrap3/css/bootstrap.css" type="text/css" rel="stylesheet">
+<link href="../../../../trasnochada/Css/estilo.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Interfaz Consultar Autor</title>
+</head>
+
+<body>
+<div class="container">
+<header>
+<div class="col-xs-12 h1 text-center letra">Consultar Articulos</div>
+</header>
+
+<section>
+<!-- <form name="f1" method="get" action="../Controlador/controladora2.php"> -->
+
+<div class="col-xs-12"><input type="text" name="Parametro" id="Parametro" value="todos" style="visibility:hidden" class="letras"></div>
+<div class="col-xs-6"><button name="BuscarArt" id="BuscarArt" class="btn btn-primary">Buscar</button>
+
+<table id="Contenido">
+<tr>
+<td>Enlace</td>
+<td>Estado</td>
+</tr>
+</table>
+</div>
+
+<div class="col-xs-6"><button name="Buscarxj" id="Buscarxj" class="btn btn-primary">Articulos por modificar</button>
+
+<table id="Contenido2">
+<tr>
+<td>Enlace</td>
+<td>Estado</td>
+<td>Comentarios</td>
+</tr>
+</table>
+
+
+<div><br></div>
+<div><br></div>
+<div><br></div>
+<div class="col-xs-12"><input type="text" name="idartmodi" id="idartmodi" class="letras"></div>
+<div class="col-xs-12"><input name="archivo" type="file" onChange="ver(form.file.value)" class="letras"></div>
+<div class="col-xs-6"><button name="modificarart5" id="modificarart5" class="btn btn-primary" onClick="modificar()" class="letras">modificar</button></div>
+
+
+
+</div>
+<!-- </form> -->
+</section>
+
+
+
+<footer>
+</footer>
+
+</div>
+</body>
+</html>

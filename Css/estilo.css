@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.principal
+{
+	background-color:#FFF;	
+	border:solid #354179;
+	width:auto;
+	height:600px;
+	margin:auto;	
+}
+
+	
+.header
+{
+	background-color:#000000;
+    width:auto;
+	height:100px;
+	z-index:1;
+	color:#000;
+	background-image:url(../Imagenes/banner.gif);
+	background-repeat:no-repeat;
+}
+	
+.botones
+{
+	background-color:#FFF;
+	border:solid #354179;
+    width:auto;
+	height:40px;
+	z-index:1;
+}
+	
+.contenido
+{
+	background-color:#FFF;
+    width:auto;
+	height:450px;
+	z-index:1;
+	
+}
+
+.footer
+{
+	background:#354179;
+    width:auto;
+	height:30;
+	z-index:1;
+	color:#FFF;
+}
+.uno
+{
+	font-family:"Comic Sans MS", cursive;
+ 	color:#FFF;
+}
+.letra
+{
+	font-family:"Comic Sans MS", cursive;
+	color:#6C0;	
+}
+.letras
+{
+	font-family:"Comic Sans MS", cursive;
+}
+.fondo
+{
+	background:#06F;
+}
+.nav
+{
+	background:#666;	
+}
+.footerUno
+{
+	background:#999;
+    width:auto;
+	height:30;
+	z-index:1;
+	
+	
+}
+.chat
+{
+	background:#CCC;	
+}

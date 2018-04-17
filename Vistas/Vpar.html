@@ -1,0 +1,82 @@
+
+<!doctype html>
+<html>
+<head>
+<script src="../Includes/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="../Includes/jquery-ui-1.10.4/js/jquery-ui-1.10.4.custom.js"></script>
+<link href="../includes/boostrap3/css/bootstrap.css" type="text/css" rel="stylesheet">
+<link href="../Css/estilo.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+#divchat {
+	position: absolute;
+	left: 900px;
+	top: 290px;
+	width: 194px;
+	height: 237px;
+	z-index: 1;
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<script type="text/javascript" src="../js/JavascriptEditor.js"></script>
+<title>par</title>
+</head>
+
+<body  class="fondo">
+<div  id="divchat">
+<iframe  class="chat" name="window" src="../chat/chat.php" width="300" height="200" marginwidth="1" scrolling="yes" frameborder="1"></iframe>
+ 
+Usuario: <input type="text" id="user" name="user" value="par" size=33><BR> 
+Mensaje: <input type="text" id="mensaje" name="mensaje" size=33><BR> 
+<input type="submit" VALUE="Enviar" name="enviarChat" id="enviarChat" size=33><BR> 
+
+
+</div>
+
+<div class="container fondodiv3">
+
+<header>
+<div class="nav">
+<div class="col-xs-12"><br></div>
+<div class="col-xs-5 text-center"></div>
+<div id="showNameA" class="col-xs-2 "></div>
+<div id="showRolA" class="col-xs-2"></div>
+<div class="col-xs-2 text-center"><button name="cerrarSE" id="cerrarSE" class="btn btn-primary letras" >Cerrar sesion</button></div>
+<div class="col-xs-1"></div>
+
+<div class="fondodiv col-xs-12" >..</div>
+
+<div class="fondodiv col-xs-12">
+
+<div class="col-xs-3"><button name="CrearArt" id="CrearArt" class="btn btn-primary letras"><a href="Vhacerrevision.html" target="formulario" class="uno">Articulos por revisar</a></button></div>
+<div class="col-xs-2 "><input type="text" name="buscarArP" id="buscarArP" class="letras"></div>
+<div class="col-xs-2 text-center"><button name="buscarBTNP" id="buscarBTNP" class="btn-link h4 letras">Buscar</button></div>
+
+</div>
+</header>
+
+
+<section  class="col-xs-8 fondodiv4">
+<div class="col-xs-6 ">	<iframe name="formulario" width="700" height="400"></iframe></div>
+
+
+</section>
+
+<nav>
+<div class="col-xs-4 fondodiv ">
+<div class="h1 text-center">REVISTA TIC</div>
+<div class="text-center" id="datosA"></div>
+
+
+<button name="botonchatPar" id="botonchatPar" class="btn btn-default">BOTON CHAT</button>
+
+</div>
+</nav>
+<footer class="col-xs-12 text-center fondodiv">FOOTER</footer>
+
+
+
+
+</div>
+</body>
+</html>

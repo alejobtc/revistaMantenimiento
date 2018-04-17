@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link href="../includes/boostrap3/css/bootstrap.css" type="text/css" rel="stylesheet">
+<link href="../Css/estilo.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Documento sin título</title>
+</head>
+
+<body>
+<header>
+<div class="col-xs-12 h1 text-center letra">Ingresar Articulo</div>
+</header>
+<section>
+<form action="../Controlador/subirArticulo.php" method="post" enctype="multipart/form-data">   
+<div class="col-xs-6 letras">Digite el id del Articulo(*)</div>
+<div class="col-xs-6 letras"><input type="text" name="idear" id="idear"></div>
+
+<div class="col-xs-6 letras">Digite Nombre del Articulo(*)</div>
+<div class="col-xs-6 letras"><input type="text" name="tituloar" id="tituloar"></div>
+
+<div class="col-xs-6 letras">Digite Tema</div>
+<div class="col-xs-6 letras"><input type="text" name="temaar" id="temaar"></div>
+
+<div class="col-xs-6 letras">Digite Palabras clave (separadas por coma)</div>
+<div class="col-xs-6 letras"><input type="text" name="p_clavear" id="p_clavear"></div>
+
+<div class="col-xs-6 letras">Digite Resumen </div>
+<div class="col-xs-6 letras"><input type="text" name="resumenar" id="resumenar"></div>
+
+<div class="col-xs-6 letras">Digite identificacion del Autor</div>
+<div class="col-xs-6 letras"><input type="text" name="idautorar" id="idautorar"></div>
+
+<div class="col-xs-6 letras">Digite Comenarios</div>
+<div class="col-xs-6 letras"><input type="text" name="comentariosar" id="comentariosar"></div>
+
+<div class="col-xs-6 letras">Archivo: </div>
+<div class="col-xs-6 letras"><input name="archivo" type="file" onChange="ver(form.file.value)"></div>
+
+
+    
+<div class="col-xs-12 h1 text-center"> <input type="submit" name="añadir" value="Agregar Articulo" class="btn btn-primary"/></div>
+</form>
+</section>
+<!--<form action="upload.php" method="post" enctype="multipart/form-data">
+  <input name="archivo" type="file" size="35" />
+  <input name="action" type="hidden" value="upload" />
+    <input name="enviar" type="submit" value="Upload File" />    
+</form>-->
+
+</body>
+</html>

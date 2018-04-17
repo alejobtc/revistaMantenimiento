@@ -1,0 +1,5 @@
+- CORREGIDO EL PROMEDIO DE NOTAS (consulta SQL del contar notas).
+- LISTAR ARTICULOS CON EL LINK EN LA VISTA PARES 
+- ARTICULOS PARA PUBLICAR (editor) actualizando estado en la tabla articulo
+
+- PUBLICAR ARTICULOS AL CARGAR LA PAGINA
