@@ -1,4 +1,11 @@
 // JavaScript Document
+
+
+function validar(obj) {
+  patron = /^\d{4}\-\d{2}\-\d{2}$/
+  return patron.test(obj);
+}
+
 $(function()
 {	
 
@@ -9,14 +16,16 @@ $("#consultarPorFecha").button().on("click", function(event)
 	if(document.getElementById('fechaInicio').value == '' || document.getElementById('fechaFin').value == '')
 	{
 
-		alert("Ingresar fecha de inicio y fecha de fin");
+		alert("ERROR: Hay campos vacíos");
+
+	}else if(!validar(document.getElementById('fechaInicio').value) || !validar(document.getElementById('fechaFin').value)){
+
+		alert("ERROR: Formatos de fecha inválidos");
 
 	}else{
 
 		var obj=document.getElementById('Contenido1');
 		obj.innerHTML="<tr class=\"success letras\"><td>TITULO</td><td>RESUMEN</td><td>TEMA</td></tr></table></div>";
-
-		//alert(document.getElementById('CodPublicacion').value);
 
 	 $.post("../Controlador/ControladoraArticulo.php",{accion:'consultarPorFecha', 
 	 	inicio: document.getElementById('fechaInicio').value,
@@ -25,7 +34,7 @@ $("#consultarPorFecha").button().on("click", function(event)
 
 	 	function(respuesta){
 
-	 		alert(respuesta);
+	 		//alert(respuesta);
 	 		var datos= jQuery.parseJSON(respuesta); 	
 
 	 		for (var i in datos)
@@ -74,11 +83,18 @@ $("#consultarPorPublicacion").button().on("click", function(event)
 	if(document.getElementById('CodPublicacion').value == '')
 	{
 
-		alert("Ingresar código de publicación");
+		alert("ERROR: Campo de código en blanco");
+
+	}else if(isNaN(document.getElementById('CodPublicacion').value)){
+
+		alert("ERROR: El código es un número de 3 dígitos");
+
+	}else if(document.getElementById('CodPublicacion').value.length != 3){
+
+		alert("ERROR: El código es un número de 3 dígitos");
 
 	}else{
 
-		alert(respuesta);
 
 		var obj=document.getElementById('Contenido1');
 		obj.innerHTML="<tr class=\"success letras\"><td>TITULO</td><td>RESUMEN</td><td>TEMA</td></tr></table></div>";

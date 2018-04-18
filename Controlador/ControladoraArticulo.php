@@ -327,6 +327,10 @@ class controladora
 		$CRUDart= new CRUDarticulo();
 		$Registros=$CRUDart->consultarPorFecha($Dato);
 
+		if ($Registros == -1) {
+			echo -1;
+		}
+
 		$Filas=pg_numrows($Registros);
 
 		$M = array();

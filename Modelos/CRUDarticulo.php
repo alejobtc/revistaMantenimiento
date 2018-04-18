@@ -93,21 +93,27 @@ public function consultarPublicacion($Dato){
 	$this->Sql="Select * from articulo where codigopublicacion='".$Dato['codigo']."';";
 
 	//$this->Sql="Select * from articulo where codigopublicacion='".$Dato."';";
-	$Registros=pg_exec($this->Conexion,$this->Sql);	
+
+	$Registros=pg_query($this->Conexion,$this->Sql);	
+
+	if ($Registros == 'FALSE') {
+		return -1;
+	}else{
+		return ($Registros);
+	}
 	
-	return ($Registros);
+	
 
 }
 
 public function consultarPorFecha($Dato){
 
 	$this->Sql="Select * from articulo where fechapublicacion>='".$Dato['inicio']."' and fechapublicacion<='".$Dato['fin']."';";
+	$Registros = pg_query($this->Conexion,$this->Sql);	
 
-	//$this->Sql="Select * from articulo where fechapublicacion>='".$Dato['inicio']."';";
-	$Registros=pg_exec($this->Conexion,$this->Sql);	
-
-	
 	return ($Registros);
+		
+	
 
 }
 
